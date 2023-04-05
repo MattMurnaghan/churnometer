@@ -1,6 +1,5 @@
 import streamlit as st
 
-
 def predict_churn(X_live, churn_features, churn_pipeline_dc_fe, churn_pipeline_model):
 
     # from live data, subset features related to this pipeline
@@ -30,7 +29,6 @@ def predict_churn(X_live, churn_features, churn_pipeline_dc_fe, churn_pipeline_m
 
     return churn_prediction
 
-
 def predict_tenure(X_live, tenure_features, tenure_pipeline, tenure_labels_map):
 
     # from live data, subset features related to this pipeline
@@ -59,7 +57,6 @@ def predict_tenure(X_live, tenure_features, tenure_pipeline, tenure_labels_map):
         )
 
     st.write(statement)
-
 
 def predict_cluster(X_live, cluster_features, cluster_pipeline, cluster_profile):
 
